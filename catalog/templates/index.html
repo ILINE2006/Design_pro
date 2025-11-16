@@ -3,14 +3,6 @@
 {% block content %}
 <h1>Design.pro - Главная страница</h1>
 <p>Добро пожаловать в Design.pro!</p>
-
-<h2>Динамический контент</h2>
-<p>Статистика системы:</p>
-<ul>
-    <li><strong>Пользователей:</strong> {{ num_users }}</li>
-    <li><strong>Заявок:</strong> {{ num_requests }}</li>
-</ul>
-
 {% if user.is_authenticated %}
     <p>Вы вошли как: {{ user.get_username }}</p>
 {% else %}
